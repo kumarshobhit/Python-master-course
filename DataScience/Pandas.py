@@ -162,7 +162,16 @@ new_df.columns=iris.columns
 # print(new_df.head())
 
 iris=pd.concat((iris,new_df),axis=0)
-print(iris)
+# print(iris)
 # axis = 0, concat by row
 # axis = 1, concat by column
+
+# merging two dataframes
+df1 = pd.DataFrame({'S_Name': ['Shobhit', 'Aman', 'Jatin','Shobhit'], 'CGPA': [2, 4, 5, 3]})
+df2 = pd.DataFrame({'T_Name': ['Shobhit', 'Aman', 'Jatin','Shobhit'], 'CGPA': [3,6,8,9]})
+
+print(df1.merge(df2,how='inner'))
+print(df1.merge(df2,how='left'))
+print(df1.merge(df2, how='right'))
+print(df1.merge(df2, how='outer'))
 
