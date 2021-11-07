@@ -175,3 +175,6 @@ print(df1.merge(df2,how='left'))
 print(df1.merge(df2, how='right'))
 print(df1.merge(df2, how='outer'))
 
+# writing output 
+
+

@@ -92,10 +92,10 @@ D=D.flatten()
 # print(A.T)
 # np.transpose(A)
 
-# stacking of arrays-horizontal and vertical 
 E=np.random.randint(0,10,(2,2)) 
 F=np.random.randint(0,10,(2,2))
 
+# stacking of arrays-horizontal and vertical
 print(np.hstack((E,F)))
 print(np.vstack((E,F)))
 
